@@ -1,0 +1,13 @@
+<h3 id="Header">All quotes in the quoteLibrary are to go Here</h3>
+<h3>{{userName.value}} has Logged In!</h3>
+<div *ngFor ='let quoteList of quoteList'>
+    <div class="card" style="width:50%; left: 20%">
+      <div class="card-body">
+        <div class="jumbotron jumbotron-fluid">
+        </div>
+        <p>{{quoteList.saying}}</p>
+        <p>{{quoteList.sayor}}<p>
+      </div>
+    </div>
+</div>
+<app-quote-creator></app-quote-creator>

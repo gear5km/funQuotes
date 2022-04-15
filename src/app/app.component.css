@@ -1,5 +1,17 @@
-@import'~bootstrap/dist/css/bootstrap.css';
+
+.loginSection{
+  margin-top:5%;
+}
+
 
 .loginPoint{
     margin-left: 35%;
+}
+
+#userArea{
+    display:block;
+}
+
+#Heading{
+  margin-left:45%;
 }
