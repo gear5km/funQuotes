@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { QuoteLibrary } from '../quote-library';
 
@@ -10,13 +10,15 @@ import { QuoteLibrary } from '../quote-library';
 })
 export class QuoteCreatorComponent implements OnInit {
 
+  @Input() userName: any
+
   userSaying= new FormControl('');
   userSayor = new FormControl('')
 
   userQuote= QuoteLibrary;
 
   postUserQuote(){
-    this.userQuote.push({saying:this.userSaying.value, sayor:this.userSayor.value, rating:5, poster:"KimTest"})
+    this.userQuote.push({saying:this.userSaying.value, sayor:this.userSayor.value, rating:5, poster:this.userName.value})
     alert(this.userQuote[0])
   }
 

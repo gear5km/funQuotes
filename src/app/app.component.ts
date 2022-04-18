@@ -1,6 +1,6 @@
 import { NONE_TYPE } from '@angular/compiler';
 import { Component } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -9,13 +9,16 @@ import { FormControl } from '@angular/forms';
 })
 export class AppComponent {
   title = 'funQuotes';
-  userName= new FormControl('');
+  userName= new FormControl('', Validators.required);
   userHasLoggedIn=false;
 
   parseUserName(){
     var user = this.userName.value;
     alert(user);
-    this.userHasLoggedIn=true;
+    if(this.userName.valid){
+      this.userHasLoggedIn=true;
+    }
+
     //var userArea = document.getElementById('#userArea')
     //userArea.style.display= "none";
   }
