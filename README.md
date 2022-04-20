@@ -9,11 +9,16 @@ A Simple Website that displays a Library of Quotes, with user input
 app.component.html - The Main entry point of the program. Asks user to type in a name in order to login
 
 app.component.ts- Contains:
- userName - takes in a userName for posting purpouses                         
- parseUserName() - function with conditional that checks if user has typed in a name
 
-quote-model.ts - Class blueprint for quotes
-quote-library.ts -Imports the quote-model class as a blueprint and generates an Array of quotes from it, can have new quotes from the quote-creator component pushed to it.
+ 1. **userName** - takes in a userName for posting purpouses
+
+ 2. **parseUserName()** - function with conditional that checks if user has typed in a name
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+**quote-model.ts** - Class blueprint for quotes
+
+**quote-library.ts** -Imports the quote-model class as a blueprint and generates an Array of quotes from it, can have new quotes from the quote-creator component pushed to it.
 
 #### nav-bar component || app-nav-bar
 
