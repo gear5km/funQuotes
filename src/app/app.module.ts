@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { FormsModule,ReactiveFormsModule} from '@angular/forms';
 import { QuoteViewComponent } from './quote-view/quote-view.component';
 import { QuoteCreatorComponent } from './quote-creator/quote-creator.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     QuoteViewComponent,
     QuoteCreatorComponent,
+    NavBarComponent,
   ],
   imports: [
     BrowserModule,

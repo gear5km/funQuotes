@@ -2,28 +2,30 @@
 <head>
 
 </head>
+<app-nav-bar></app-nav-bar>
 <body>
   <div class="loginSection">
-    <h3 id="Heading">FunQuotes</h3>
     <div class="loginPoint">
         <div class="card" style="width:550px;height:250px">
-            <h6 style="margin-left:30%">Enter your Prefered Name</h6>
+            <h6 style="margin-left:30%; margin-top:5%">Enter your Prefered Name</h6>
               <input type="text" [formControl]="userName" class="form-control">
             <div *ngIf='userName.invalid' class="alert alert-danger">
               <p>Please Enter A Username</p>
             </div>
             <br>
             <br>
-            <button class="btn btn-primary" style="width:150px; align-self: center;" (click)="parseUserName()">Login</button>
+            <button class="btn btn-primary" style="width:150px; margin-top:3%; align-self: center;" (click)="parseUserName()">Login</button>
             <br>
-            <h6 *ngIf="userHasLoggedIn" id="userArea" style="margin-left:25%"> Welcome {{ userName.value }}</h6>
+            <h6 *ngIf="userHasLoggedIn" id="userArea" style="margin-left:40%; margin-top:5%"> Welcome {{ userName.value }}</h6>
         </div>
     </div>
     <div class="row">
-      <div class="column-sm" style="width:900px">
+      <div class="column-sm" style="width:700px">
+        <br>
         <app-quote-view *ngIf='userHasLoggedIn'[userName]='userName'></app-quote-view>
       </div>
-      <div class="column-sm" style="width:900px">
+      <div class="column-sm" style="width:300px">
+        <br>
         <app-quote-creator *ngIf='userHasLoggedIn' [userName]="userName"></app-quote-creator>
       </div>
     </div>

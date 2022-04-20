@@ -14,7 +14,7 @@ export class AppComponent {
 
   parseUserName(){
     var user = this.userName.value;
-    alert(user);
+    //alert(user);
     if(this.userName.valid){
       this.userHasLoggedIn=true;
     }

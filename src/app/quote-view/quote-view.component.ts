@@ -10,15 +10,13 @@ import { QuoteLibrary } from '../quote-library';
 })
 export class QuoteViewComponent implements OnInit {
 
-  @Input() quoteList2: any
-
   @Input() userName: any
 
-  quoteList = QuoteLibrary;
+  QuoteLibrary = QuoteLibrary;
 
   rateUp(index:number){
     alert(index);
-      this.quoteList[index].rating = 10;
+      this.QuoteLibrary[index].rating = 10;
   }
 
 
