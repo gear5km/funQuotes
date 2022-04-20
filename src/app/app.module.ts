@@ -7,6 +7,7 @@ import { FormsModule,ReactiveFormsModule} from '@angular/forms';
 import { QuoteViewComponent } from './quote-view/quote-view.component';
 import { QuoteCreatorComponent } from './quote-creator/quote-creator.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { HighestRatedDirective } from './highest-rated.directive';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
     QuoteViewComponent,
     QuoteCreatorComponent,
     NavBarComponent,
+    HighestRatedDirective,
   ],
   imports: [
     BrowserModule,

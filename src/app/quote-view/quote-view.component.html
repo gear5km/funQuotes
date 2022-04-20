@@ -15,6 +15,9 @@
         <p>Posted by {{QuoteLibrary.poster}}</p>
         <p>Rating {{QuoteLibrary.rating}}</p>
         <button class="btn btn-primary" (click)='rateUp(i)'>Like</button>
+        <div appHighestRated *ngIf="QuoteLibrary.rating> 5">
+          <p>Highest Rated</p>
+        </div>
       </div>
     </div>
     <br>
