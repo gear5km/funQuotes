@@ -17,12 +17,16 @@ export class QuoteViewComponent implements OnInit {
   rateUp(index:number){
     alert(index);
       this.QuoteLibrary[index].rating++;
+      alert(QuoteLibrary.length);
   }
-
 
   constructor() { }
 
   ngOnInit(): void {
+    var ratings=[]
+    for(var i = 0; i < QuoteLibrary.length; i++){
+      
+    }
   }
 
 }
