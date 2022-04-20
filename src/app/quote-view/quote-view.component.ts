@@ -16,7 +16,7 @@ export class QuoteViewComponent implements OnInit {
 
   rateUp(index:number){
     alert(index);
-      this.QuoteLibrary[index].rating = 10;
+      this.QuoteLibrary[index].rating++;
   }
 
 

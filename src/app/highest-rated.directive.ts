@@ -1,3 +1,4 @@
+import { Quote } from '@angular/compiler';
 import { Directive, ElementRef } from '@angular/core';
 import { QuoteLibrary } from './quote-library';
 
@@ -5,6 +6,7 @@ import { QuoteLibrary } from './quote-library';
   selector: '[appHighestRated]'
 })
 export class HighestRatedDirective {
+  QuoteLibrary=QuoteLibrary;
   
   constructor(private elem: ElementRef) {
     this.elem.nativeElement.style.backgroundColor="red";
