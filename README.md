@@ -12,6 +12,8 @@ app.component.ts- Contains:
 
  1. **userName** - takes in a userName for posting purpouses
 
+ 2. **userHasLoggedIn** - waits for true condition from parseUserName
+
  2. **parseUserName()** - function with conditional that checks if user has typed in a name
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -28,10 +30,19 @@ Component that displays a simple blue navbar
 
 Imports quotes from the quote-library and displays them, has functionality for users to vote on it
 
+Functions:
+
+rateUp(){} - increases the rating of a quote (QuoteLibrary.rating)
+
 #### quote-creator component || app-quote-creator
 
 Allows user to generate new quotes and pushes them to quote-library.
 
+Properties:
+
+  userSaying - takes in a quote, inputed by a user
+  userSayor - takes in the quotes creater, inputed by user
+  postUserQuote() - pushes a new quote to the quotelibrary in quote-library.ts
 
 ### Live Page Link:
 
