@@ -31,4 +31,9 @@ Imports quotes from the quote-library and displays them, has functionality for u
 #### quote-creator component || app-quote-creator
 
 Allows user to generate new quotes and pushes them to quote-library.
+
+
+### Live Page Link:
+
+https://gear5km.github.io/funQuotes/
  
