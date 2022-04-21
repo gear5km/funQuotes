@@ -19,6 +19,8 @@ export class AppComponent {
       this.userHasLoggedIn=true;
     }
 
+    else(alert("Please Enter A User name"))
+
     //var userArea = document.getElementById('#userArea')
     //userArea.style.display= "none";
   }

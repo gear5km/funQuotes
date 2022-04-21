@@ -14,10 +14,16 @@ export class QuoteViewComponent implements OnInit {
 
   QuoteLibrary = QuoteLibrary;
 
+  quoteRatings;
+
+  checkRating(){
+    
+  }
+
   rateUp(index:number){
-    alert(index);
+    //alert(index);
       this.QuoteLibrary[index].rating++;
-      alert(QuoteLibrary.length);
+      //alert(QuoteLibrary.length);
   }
 
   constructor() { }
@@ -25,8 +31,16 @@ export class QuoteViewComponent implements OnInit {
   ngOnInit(): void {
     var ratings=[]
     for(var i = 0; i < QuoteLibrary.length; i++){
-      
+      this.quoteRatings = [QuoteLibrary[i].rating]
     }
+
+    //alert(this.quoteRatings[0].value)
+
+    
   }
 
 }
+function checkRating() {
+  throw new Error('Function not implemented.');
+}
+
