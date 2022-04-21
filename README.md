@@ -48,3 +48,6 @@ Properties:
 
 https://gear5km.github.io/funQuotes/
  
+## Diagram
+
+![Diagram](/epicQuotes%20flow%20diagram.pngepicQuotes flow diagram.png.png "MarineGEO logo")
