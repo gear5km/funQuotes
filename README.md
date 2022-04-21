@@ -33,6 +33,8 @@ Imports quotes from the quote-library and displays them, has functionality for u
 Functions:
 
 1. **rateUp(){}** - increases the rating of a quote (QuoteLibrary.rating)
+2. **rateDown(){}** - Decreases the rating of a quote (QuoteLibrary.rating)
+2. **removeQuote(){}** - Removes a Quote from the library (QuoteLibrary.splice)
 
 #### quote-creator component || app-quote-creator
 
