@@ -32,7 +32,7 @@ Imports quotes from the quote-library and displays them, has functionality for u
 
 Functions:
 
-1. rateUp(){} - increases the rating of a quote (QuoteLibrary.rating)
+1. **rateUp(){}** - increases the rating of a quote (QuoteLibrary.rating)
 
 #### quote-creator component || app-quote-creator
 
