@@ -18,7 +18,7 @@ export class QuoteCreatorComponent implements OnInit {
   userQuote= QuoteLibrary;
 
   postUserQuote(){
-    this.userQuote.push({saying:this.userSaying.value, sayor:this.userSayor.value, rating:5, poster:this.userName.value})
+    this.userQuote.push({saying:this.userSaying.value, sayor:this.userSayor.value, rating:0, poster:this.userName.value})
     alert(this.userQuote[0])
   }
 
