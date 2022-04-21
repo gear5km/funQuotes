@@ -26,6 +26,16 @@ export class QuoteViewComponent implements OnInit {
       //alert(QuoteLibrary.length);
   }
 
+  rateDown(index:number){
+    //alert(index);
+      this.QuoteLibrary[index].rating--;
+      //alert(QuoteLibrary.length);
+  }
+
+  removeQuote(index:number){
+    this.QuoteLibrary.splice(index,1)
+  }
+
   constructor() { }
 
   ngOnInit(): void {

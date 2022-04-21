@@ -14,7 +14,9 @@
         <p style="font-style:italic">{{QuoteLibrary.sayor}}<p>
         <p>Posted by {{QuoteLibrary.poster}}</p>
         <p>Rating {{QuoteLibrary.rating}}</p>
-        <button class="btn btn-primary" (click)='rateUp(i)'>Like</button>
+        <button class="btn btn-primary" (click)='rateUp(i)' style="margin-right: 15px;">Like</button>
+        <button class="btn btn-primary" (click)='rateDown(i)' style="margin-right: 15px;">Dislike</button>
+        <button type="button" class="btn btn-danger" (click)="removeQuote(i)">Delete</button>
         <div appHighestRated *ngIf="QuoteLibrary.rating> i + 1">
           <p>Highest Rated</p>
         </div>
