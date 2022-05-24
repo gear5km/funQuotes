@@ -15,11 +15,11 @@ export class QuoteCreatorComponent implements OnInit {
   userSaying= new FormControl('');
   userSayor = new FormControl('')
 
-  userQuote= QuoteLibrary;
+  quoteLibrary= QuoteLibrary;
 
   postUserQuote(){
-    this.userQuote.push({saying:this.userSaying.value, sayor:this.userSayor.value, rating:0, poster:this.userName.value})
-    alert(this.userQuote[0])
+    this.quoteLibrary.push({saying:this.userSaying.value, sayor:this.userSayor.value, rating:0, poster:this.userName.value})
+    alert(this.quoteLibrary[0])
   }
 
   constructor() { }
